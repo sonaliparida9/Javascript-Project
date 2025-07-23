@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../src/css/todo-list.css">
+
+</head>
+<body  class="container-fluid m-0 p-0">
+    <div class="w-100 vh-100 p-3 bg-gradient-custom">
+        <div class=todo-list>
+            <h2 class="d-flex align-items-center mb-3"style="color:#002765">To-Do List <img src="../public/images/icon.png" class="mx-2" style="width: 30px;"></h2>
+             <div class="d-flex justify-content-between align-items-center mb-3 " style="background-color: #edeef0; border-radius: 30px; padding-left: 20px;">
+                <input type="text" placeholder="Add Your Text" id="inputbox">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li >Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>    
+    </div>
+    <script src="../src/script/todo-list.js"></script>
+</body>
+</html>
