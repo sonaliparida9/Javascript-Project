@@ -2,8 +2,9 @@ const inputBox = document.getElementById("inputbox");
 const listContainer = document.getElementById("list-container");
 
 function addTask(){
-    if(inputBox.value===' '){
-        alert("you must be write the task!")
+    if(inputBox.value.trim() ===' '){
+        alert("you must be write the task!");
+        return;
     }else{
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
