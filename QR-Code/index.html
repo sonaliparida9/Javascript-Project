@@ -14,7 +14,7 @@
         <div id="imgBox">
             <img src="" id="qrImage">
         </div>
-        <button>Generate QR Code</button>
+        <button onclick="GenerateQR()">Generate QR Code</button>
     </div>
 
     <script>
@@ -26,7 +26,7 @@
 
         function GenerateQR(){
           if(qrText.value.length > 0){
-              qrImage.src = " https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=" + qrText.value;
+              qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=" + qrText.value;
               imgBox.classList.add("show-img");
             }else{
                 qrText.classList.add('error');
